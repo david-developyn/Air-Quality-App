@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="index.js" defer></script>
+		<link rel="stylesheet" href="styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+		<h1>Air Quality Around The World</h1>
+		<a href="search_nearest.html">Search by coordinates</a>
+		<section>
+			<menu>
+				<button onclick="display_country_page(countries_page_number - 1)">&lt;</button>
+				<b id="countries_page_label">Page 1</b>
+				<button onclick="display_country_page(countries_page_number + 1)">&gt;</button>
+			</menu>
+			<ul id="country_list" class="four_columns"></ul>
+		</section>
+		<section>
+			<menu>
+				<button onclick="display_city_page(cities_page_number - 1)">&lt;</button>
+				<b id="cities_page_label">Page 1</b>
+				<button onclick="display_city_page(cities_page_number + 1)">&gt;</button>
+			</menu>
+			<ul id="city_list" class="four_columns"></ul>
+		</section>
+		<section>
+			<ul id="measurements" class="four_columns">
+				<li title="Black Carbon mass concentration"><b>BC:</b> <span id="11"></span>µg/m³</li>
+				<li title="Carbon Dioxide concentration"><b>CO₂:</b> <span id="21"></span>ppm</li>
+				<li title="Carbon Monoxide concentration"><b>CO:</b> <span id="8"></span>ppm</li>
+				<li title="Carbon Monoxide mass concentration"><b>CO mass:</b> <span id="4"></span>µg/m³</li>
+				<li title="Methane concentration"><b>CH₄:</b> <span id="28"></span>ppm</li>
+				<li title="Nitrogen Dioxide concentration"><b>NO₂:</b> <span id="7"></span>ppm</li>
+				<li title="Nitrogen Dioxide mass concentration"><b>NO₂ mass:</b> <span id="5"></span>µg/m³</li>
+				<li title="Nitrogen Oxides concentration"><b>NOx:</b> <span id="19840"></span>ppm</li>
+				<li title="Nitrogen Oxides mass concentration"><b>NOx mass:</b> <span id="27"></span>µg/m³</li>
+				<li title="Nitrogen Monoxide concentration"><b>NO:</b> <span id="35"></span>ppm</li>
+				<li title="Nitrogen Monoxide mass concentration"><b>NO mass:</b> <span id="19843"></span>µg/m³</li>
+				<li title="Ozone concentration"><b>O₃:</b> <span id="10"></span>ppm</li>
+				<li title="Ozone mass concentration"><b>O₃ mass:</b> <span id="3"></span>µg/m³</li>
+				<li title="Particulate matter less than 10 micrometers in diameter mass concentration"><b>PM10:</b> <span id="1"></span>µg/m³</li>
+				<li title="PM10 count"><b>PM10 count:</b> <span id="135"></span>particles/cm³</li>
+				<li title="Particulate matter less than 4 micrometers in diameter mass concentration"><b>PM4:</b> <span id="19844"></span>µg/m³</li>
+				<li title="Particulate matter less than 2.5 micrometers in diameter mass concentration"><b>PM2.5:</b> <span id="2"></span>µg/m³</li>
+				<li title="PM2.5 count"><b>PM2.5 count:</b> <span id="130"></span>particles/cm³</li>
+				<li title="Particulate matter less than 1 micrometer in diameter mass concentration"><b>PM1:</b> <span id="19"></span>µg/m³</li>
+				<li title="PM1 count"><b>PM1 count:</b> <span id="126"></span>particles/cm³</li>
+				<li title="Sulfur Dioxide concentration"><b>SO₂:</b> <span id="9"></span>ppm</li>
+				<li title="Sulfur Dioxide mass concentration"><b>SO₂ mass:</b> <span id="6"></span>µg/m³</li>
+				<li title="Ultrafine Particles count concentration"><b>UFP count:</b> <span id="33"></span>particles/cm³</li>
+			</ul>
+		</section>
+	</body>
+</html>
